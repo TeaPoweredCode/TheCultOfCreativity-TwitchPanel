@@ -1,0 +1,47 @@
+{
+    "GroupName" : "The Cult of Creativity",
+    "Discord" : null,
+    "Website" : null,
+    "Users" : [
+        {
+            "Twitch" : "mikemoans",
+            "Youtube" : "mikemoans9350",
+            "Discord" : "",
+            "Instagram" : "mikemoans",
+            "Patreon": "mikemoans",
+            "LinkTree": ""
+        },
+        {
+            "Twitch" : "warboss_tuska",
+            "Youtube" : "",
+            "Discord" : "",
+            "Instagram" : "warbosstuska",
+            "Patreon": "",
+            "LinkTree": ""
+        },
+        {
+            "Twitch" : "redstrawbaby",
+            "Youtube" : "",
+            "Discord" : "",
+            "Instagram" : "redstrawbaby",
+            "Patreon": "",
+            "LinkTree": ""
+        },
+        {
+            "Twitch" : "nerdhalla",
+            "Youtube" : "",
+            "Discord" : "https://discord.com/invite/RkcK5Y6CvC",
+            "Instagram" : "nerdhalladesigns",
+            "Patreon": "",
+            "LinkTree": "nerdhalladesigns"
+        },
+        {
+            "Twitch" : "painterlygit",
+            "Youtube" : "",
+            "Discord" : "",
+            "Instagram" : "painterlygit",
+            "Patreon": "",
+            "LinkTree": ""
+        }   
+    ]
+}
