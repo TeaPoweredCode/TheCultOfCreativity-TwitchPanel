@@ -43,6 +43,30 @@
             "Instagram" : "https://www.instagram.com/painterlygit",
             "Patreon": "",
             "LinkTree": ""
-        }   
+        },
+        {
+            "TwitchLogin" : "gmworkshop",
+            "Youtube" : "https://www.youtube.com/c/GMWorkshop",
+            "Discord" : "https://discord.gg/wn9cHPxqkQ",
+            "Instagram" : "",
+            "Patreon": "",
+            "LinkTree": ""
+        },
+        {
+            "TwitchLogin" : "wren_temple",
+            "Youtube" : "https://www.youtube.com/@WrenTemple",
+            "Discord" : "",
+            "Instagram" : "https://www.instagram.com/wrentemple/",
+            "Patreon": "",
+            "LinkTree": ""
+        },        
+        {
+            "TwitchLogin" : "teapoweredcode",
+            "Youtube" : "",
+            "Discord" : "",
+            "Instagram" : "",
+            "Patreon": "",
+            "LinkTree": ""
+        }
     ]
 }
