@@ -2,44 +2,45 @@
     "GroupName" : "The Cult of Creativity",
     "Discord" : null,
     "Website" : null,
-    "Users" : [
+    "Users" : 
+    [
         {
-            "Twitch" : "mikemoans",
-            "Youtube" : "mikemoans9350",
+            "TwitchLogin" : "mikemoans",
+            "Youtube" : "https://www.youtube.com/@mikemoans9350",
             "Discord" : "",
-            "Instagram" : "mikemoans",
-            "Patreon": "mikemoans",
+            "Instagram" : "https://www.instagram.com/mikemoans/",
+            "Patreon": "https://www.patreon.com/mikemoans",
             "LinkTree": ""
         },
         {
-            "Twitch" : "warboss_tuska",
+            "TwitchLogin" : "warboss_tuska",
             "Youtube" : "",
             "Discord" : "",
-            "Instagram" : "warbosstuska",
+            "Instagram" : "https://www.instagram.com/warbosstuska",
             "Patreon": "",
             "LinkTree": ""
         },
         {
-            "Twitch" : "redstrawbaby",
+            "TwitchLogin" : "redstrawbaby",
             "Youtube" : "",
             "Discord" : "",
-            "Instagram" : "redstrawbaby",
+            "Instagram" : "https://www.instagram.com/redstrawbaby",
             "Patreon": "",
             "LinkTree": ""
         },
         {
-            "Twitch" : "nerdhalla",
+            "TwitchLogin" : "nerdhalla",
             "Youtube" : "",
             "Discord" : "https://discord.com/invite/RkcK5Y6CvC",
-            "Instagram" : "nerdhalladesigns",
+            "Instagram" : "https://www.instagram.com/nerdhalladesigns",
             "Patreon": "",
-            "LinkTree": "nerdhalladesigns"
+            "LinkTree": "https://linktr.ee/nerdhalladesigns"
         },
         {
-            "Twitch" : "painterlygit",
+            "TwitchLogin" : "painterlygit",
             "Youtube" : "",
             "Discord" : "",
-            "Instagram" : "painterlygit",
+            "Instagram" : "https://www.instagram.com/painterlygit",
             "Patreon": "",
             "LinkTree": ""
         }   
