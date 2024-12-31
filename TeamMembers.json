@@ -1,16 +1,16 @@
 {
     "GroupName" : "The Cult of Creativity",
-    "Discord" : null,
-    "Website" : null,
+    "Discord" : "https://discord.gg/2VBqk2vVKt",
+    "Website" : "",
     "Users" : 
     [
         {
             "TwitchLogin" : "mikemoans",
             "Youtube" : "https://www.youtube.com/@mikemoans9350",
-            "Discord" : "",
+            "Discord" : "https://discord.gg/2VBqk2vVKt",
             "Instagram" : "https://www.instagram.com/mikemoans/",
             "Patreon": "https://www.patreon.com/mikemoans",
-            "LinkTree": ""
+            "Linktree": ""
         },
         {
             "TwitchLogin" : "warboss_tuska",
@@ -18,7 +18,7 @@
             "Discord" : "",
             "Instagram" : "https://www.instagram.com/warbosstuska",
             "Patreon": "",
-            "LinkTree": ""
+            "Linktree": ""
         },
         {
             "TwitchLogin" : "redstrawbaby",
@@ -26,7 +26,7 @@
             "Discord" : "",
             "Instagram" : "https://www.instagram.com/redstrawbaby",
             "Patreon": "",
-            "LinkTree": ""
+            "Linktree": ""
         },
         {
             "TwitchLogin" : "nerdhalla",
@@ -34,7 +34,7 @@
             "Discord" : "https://discord.com/invite/RkcK5Y6CvC",
             "Instagram" : "https://www.instagram.com/nerdhalladesigns",
             "Patreon": "",
-            "LinkTree": "https://linktr.ee/nerdhalladesigns"
+            "Linktree": "https://linktr.ee/nerdhalladesigns"
         },
         {
             "TwitchLogin" : "painterlygit",
@@ -42,7 +42,7 @@
             "Discord" : "",
             "Instagram" : "https://www.instagram.com/painterlygit",
             "Patreon": "",
-            "LinkTree": ""
+            "Linktree": ""
         },
         {
             "TwitchLogin" : "gmworkshop",
@@ -50,7 +50,7 @@
             "Discord" : "https://discord.gg/wn9cHPxqkQ",
             "Instagram" : "",
             "Patreon": "",
-            "LinkTree": ""
+            "Linktree": ""
         },
         {
             "TwitchLogin" : "wren_temple",
@@ -58,7 +58,7 @@
             "Discord" : "",
             "Instagram" : "https://www.instagram.com/wrentemple/",
             "Patreon": "",
-            "LinkTree": ""
+            "Linktree": ""
         },        
         {
             "TwitchLogin" : "teapoweredcode",
@@ -66,7 +66,15 @@
             "Discord" : "",
             "Instagram" : "",
             "Patreon": "",
-            "LinkTree": ""
+            "Linktree": ""
+        },        
+        {
+            "TwitchLogin" : "mrluxan",
+            "Youtube" : "",
+            "Discord" : "",
+            "Instagram" : "",
+            "Patreon": "",
+            "Linktree": ""
         }
     ]
 }
