@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.StreamerItem {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.StreamerItem :nth-child(1) { grid-area: 1 / 1 / 3 / 2;}
+.StreamerItem :nth-child(2) { grid-area: 1 / 2 / 2 / 3;}
+.StreamerItem :nth-child(3) { grid-area: 2 / 2 / 3 / 3;}
+
+
+.filter-white{
+  filter: invert(100%) sepia(76%) saturate(0%) hue-rotate(281deg) brightness(106%) contrast(101%);
+}
+
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: #28282800;}
+::-webkit-scrollbar-thumb {background: #888;}
+::-webkit-scrollbar-thumb:hover {background: #555;}
