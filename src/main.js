@@ -10,13 +10,15 @@ class ListManager{
     };
 
     MemberInfo = null;
+    LiveTimer = null;
+    LiveTimerInterval = 120; // seconds
     
     start(auth)
     {
         this.TwitchHeader.Authorization = `Extension ${auth.helixToken}`;
 
         this.GetMemberData().then((memberData) => {
-            this.getTwitchUserData(memberData,auth).then((TwitchData) =>{  
+            this.getTwitchUserData(memberData.Users.map(user => user.TwitchLogin)).then((TwitchData) =>{  
                 
                 document.getElementById("HeaderDiscord").href = memberData.Discord;
 
@@ -28,11 +30,13 @@ class ListManager{
                     return {...prev,[twitchLogin]:{
                         'Links': user,
                         'TwitchUser': TwitchData.data.find(twitchUser => twitchUser.login == twitchLogin),
-                        'TwitchLive':false,
+                        'TwitchStreamData':false,
+                        'ListElement':null,
                     }}
                     }, {}
                 );
                 this.buildMemberList();
+                this.startLiveCheck();
             });
           });
     }
@@ -42,24 +46,28 @@ class ListManager{
         return fetch(this.MemberDataURL).then(res => res.json());
     }
 
-    getTwitchUserData(memberData){        
-        let twitchMembers = memberData.Users.map(user => user.TwitchLogin);
-        let params = twitchMembers.map(user => `login=${user}`).join('&');
-
+    getTwitchUserData(twitchUsers){
+        let params = twitchUsers.map(user => `login=${user}`).join('&');
         return fetch(`${this.TwitchAPIBase}/users?${params}`, {headers:this.TwitchHeader})
                 .then(response => response.json())
     }
+
+    getTwitchStreamData(twitchUsers){
+        let params = twitchUsers.map(user => `user_login=${user}`).join('&');
+        return fetch(`${this.TwitchAPIBase}/streams?${params}`, {headers:this.TwitchHeader})
+                .then(response => response.json())
+    }
+
 
     buildMemberList(){
         const template = document.getElementById("template").children[0];
         const teamList = document.getElementById("TeamList");
 
         for (const [user, data] of Object.entries(this.MemberInfo)) {
-            let memberItem = this.createMemberItem(template.cloneNode(true),data);
-            teamList.appendChild(memberItem);
+            data.ListElement = this.createMemberItem(template.cloneNode(true),data);
+            teamList.appendChild(data.ListElement);
         }
     }
-
 
     createMemberItem(templateEl, data){
         templateEl.querySelector(".MemberName").textContent = data.TwitchUser.display_name;
@@ -75,5 +83,21 @@ class ListManager{
         };
 
         return templateEl;
+    }
+
+
+    startLiveCheck(){
+        this.LiveCheck();
+        this.LiveTimer = setInterval(()=>{this.LiveCheck()}, this.LiveTimerInterval * 1000);
+    }
+
+    LiveCheck(){
+        let twitchUsers = Object.keys(this.MemberInfo);
+        this.getTwitchStreamData(twitchUsers).then((TwitchData) =>{
+            for (const [user, data] of Object.entries(this.MemberInfo)) {
+                data.TwitchStreamData = TwitchData.data.find(streamData => streamData.user_login == user);
+                data.ListElement.querySelector('.StreamerLive').style.display = (data.TwitchStreamData ? 'flex' : 'none');
+            }
+        });
     }
 }
