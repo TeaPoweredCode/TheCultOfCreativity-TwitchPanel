@@ -5,7 +5,7 @@
     "Users" : 
     [
         {
-            "User" : {
+            "Info" : {
                 "Name":"mikemoans" 
             },
             "Links":{
@@ -18,7 +18,7 @@
             }
         },
         {
-            "User" : {
+            "Info" : {
                 "Name":"warboss_tuska" 
             },
             "Links":{
@@ -31,7 +31,7 @@
             }
         },
         {
-            "User" : {
+            "Info" : {
                 "Name":"redstrawbaby" 
             },
             "Links":{
@@ -44,7 +44,7 @@
             }
         },
         {
-            "User" : {
+            "Info" : {
                 "Name":"nerdhalla" 
             },
             "Links":{
@@ -57,7 +57,7 @@
             }
         },
         {
-            "User" : {
+            "Info" : {
                 "Name":"painterlygit" 
             },
             "Links":{
@@ -70,7 +70,7 @@
             }
         },
         {
-            "User" : {
+            "Info" : {
                 "Name":"gmworkshop" 
             },
             "Links":{
@@ -83,7 +83,7 @@
             }
         },
         {
-            "User" : {
+            "Info" : {
                 "Name":"wren_temple" 
             },
             "Links":{
@@ -96,8 +96,8 @@
             }
         },        
         {
-            "User" : {
-                "Name":"teapoweredcode" 
+            "Info" : {
+                "Name":"TeaPoweredCode - Dev" 
             },
             "Links":{
                 "Twitch" : "https://www.twitch.tv/teapoweredcode",
@@ -109,11 +109,11 @@
             }
         },        
         {
-            "User" : {
-                "Name":"mrluxan" 
+            "Info" : {
+                "Name":"MrLuxan" 
             },
             "Links":{
-                "Twitch" : "https://www.twitch.tv/mrluxan",
+                "Twitch" : "",
                 "Youtube" : "",
                 "Discord" : "",
                 "Instagram" : "",
