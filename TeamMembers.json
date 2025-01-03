@@ -5,76 +5,121 @@
     "Users" : 
     [
         {
-            "TwitchLogin" : "mikemoans",
-            "Youtube" : "https://www.youtube.com/@mikemoans9350",
-            "Discord" : "https://discord.gg/2VBqk2vVKt",
-            "Instagram" : "https://www.instagram.com/mikemoans/",
-            "Patreon": "https://www.patreon.com/mikemoans",
-            "Linktree": ""
+            "User" : {
+                "Name":"mikemoans" 
+            },
+            "Links":{
+                "Twitch" : "https://www.twitch.tv/mikemoans",
+                "Youtube" : "https://www.youtube.com/@mikemoans9350",
+                "Discord" : "https://discord.gg/2VBqk2vVKt",
+                "Instagram" : "https://www.instagram.com/mikemoans/",
+                "Patreon": "https://www.patreon.com/mikemoans",
+                "Linktree": ""
+            }
         },
         {
-            "TwitchLogin" : "warboss_tuska",
-            "Youtube" : "",
-            "Discord" : "",
-            "Instagram" : "https://www.instagram.com/warbosstuska",
-            "Patreon": "",
-            "Linktree": ""
+            "User" : {
+                "Name":"warboss_tuska" 
+            },
+            "Links":{
+                "Twitch" : "https://www.twitch.tv/warboss_tuska",
+                "Youtube" : "",
+                "Discord" : "",
+                "Instagram" : "https://www.instagram.com/warbosstuska",
+                "Patreon": "",
+                "Linktree": ""
+            }
         },
         {
-            "TwitchLogin" : "redstrawbaby",
-            "Youtube" : "",
-            "Discord" : "",
-            "Instagram" : "https://www.instagram.com/redstrawbaby",
-            "Patreon": "",
-            "Linktree": ""
+            "User" : {
+                "Name":"redstrawbaby" 
+            },
+            "Links":{
+                "Twitch" : "https://www.twitch.tv/redstrawbaby",
+                "Youtube" : "",
+                "Discord" : "",
+                "Instagram" : "https://www.instagram.com/redstrawbaby",
+                "Patreon": "",
+                "Linktree": ""
+            }
         },
         {
-            "TwitchLogin" : "nerdhalla",
-            "Youtube" : "",
-            "Discord" : "https://discord.com/invite/RkcK5Y6CvC",
-            "Instagram" : "https://www.instagram.com/nerdhalladesigns",
-            "Patreon": "",
-            "Linktree": "https://linktr.ee/nerdhalladesigns"
+            "User" : {
+                "Name":"nerdhalla" 
+            },
+            "Links":{
+                "Twitch" : "https://www.twitch.tv/nerdhalla",
+                "Youtube" : "",
+                "Discord" : "https://discord.com/invite/RkcK5Y6CvC",
+                "Instagram" : "https://www.instagram.com/nerdhalladesigns",
+                "Patreon": "",
+                "Linktree": "https://linktr.ee/nerdhalladesigns"
+            }
         },
         {
-            "TwitchLogin" : "painterlygit",
-            "Youtube" : "",
-            "Discord" : "",
-            "Instagram" : "https://www.instagram.com/painterlygit",
-            "Patreon": "",
-            "Linktree": ""
+            "User" : {
+                "Name":"painterlygit" 
+            },
+            "Links":{
+                "Twitch" : "https://www.twitch.tv/painterlygit",
+                "Youtube" : "",
+                "Discord" : "",
+                "Instagram" : "https://www.instagram.com/painterlygit",
+                "Patreon": "",
+                "Linktree": ""
+            }
         },
         {
-            "TwitchLogin" : "gmworkshop",
-            "Youtube" : "https://www.youtube.com/c/GMWorkshop",
-            "Discord" : "https://discord.gg/wn9cHPxqkQ",
-            "Instagram" : "",
-            "Patreon": "",
-            "Linktree": ""
+            "User" : {
+                "Name":"gmworkshop" 
+            },
+            "Links":{
+                "Twitch" : "https://www.twitch.tv/gmworkshop",
+                "Youtube" : "https://www.youtube.com/c/GMWorkshop",
+                "Discord" : "https://discord.gg/wn9cHPxqkQ",
+                "Instagram" : "",
+                "Patreon": "",
+                "Linktree": ""
+            }
         },
         {
-            "TwitchLogin" : "wren_temple",
-            "Youtube" : "https://www.youtube.com/@WrenTemple",
-            "Discord" : "",
-            "Instagram" : "https://www.instagram.com/wrentemple/",
-            "Patreon": "",
-            "Linktree": ""
+            "User" : {
+                "Name":"wren_temple" 
+            },
+            "Links":{
+                "Twitch" : "https://www.twitch.tv/wren_temple",
+                "Youtube" : "https://www.youtube.com/@WrenTemple",
+                "Discord" : "",
+                "Instagram" : "https://www.instagram.com/wrentemple/",
+                "Patreon": "",
+                "Linktree": ""
+            }
         },        
         {
-            "TwitchLogin" : "teapoweredcode",
-            "Youtube" : "",
-            "Discord" : "",
-            "Instagram" : "",
-            "Patreon": "",
-            "Linktree": ""
+            "User" : {
+                "Name":"teapoweredcode" 
+            },
+            "Links":{
+                "Twitch" : "https://www.twitch.tv/teapoweredcode",
+                "Youtube" : "",
+                "Discord" : "",
+                "Instagram" : "",
+                "Patreon": "",
+                "Linktree": ""
+            }
         },        
         {
-            "TwitchLogin" : "mrluxan",
-            "Youtube" : "",
-            "Discord" : "",
-            "Instagram" : "",
-            "Patreon": "",
-            "Linktree": ""
+            "User" : {
+                "Name":"mrluxan" 
+            },
+            "Links":{
+                "Twitch" : "https://www.twitch.tv/mrluxan",
+                "Youtube" : "",
+                "Discord" : "",
+                "Instagram" : "",
+                "Patreon": "",
+                "Linktree": ""
+            }
         }
     ]
 }
