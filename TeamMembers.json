@@ -32,6 +32,19 @@
         },
         {
             "Info" : {
+                "Name":"Always live" 
+            },
+            "Links":{
+                "Twitch" : "https://www.twitch.tv/FerretSoftware",
+                "Youtube" : "",
+                "Discord" : "",
+                "Instagram" : "",
+                "Patreon": "",
+                "Linktree": ""
+            }
+        },
+        {
+            "Info" : {
                 "Name":"RedStrawbaby" 
             },
             "Links":{
