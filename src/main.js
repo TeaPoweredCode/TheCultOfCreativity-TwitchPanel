@@ -21,7 +21,9 @@ class ListManager{
     {
         this.Twitch.Header.Authorization = `Extension ${auth.helixToken}`;
 
-        this.GetMemberData().then((memberData) => {
+        this.GetMemberData().then((memberData) => {                            
+            document.getElementById("HeaderDiscord").href = memberData.Discord;
+
             let twitchLogins = this.GetTwitchLogins(memberData);
             this.getTwitchUserData(twitchLogins).then((TwitchData) =>{  
                 TwitchData.data.forEach((data) => {
