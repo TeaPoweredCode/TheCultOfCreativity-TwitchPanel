@@ -38,37 +38,32 @@
             <div>
                 <div class="flex flex-row gap-1.5 items-center">
                     <div class="MemberName text-white font-bold text-lg"></div>
-
-                    <div class="twitchFollow" class="h-4 w-4">
+                    <div class="TwitchFollow" class="h-4 w-4">
                         <input type="checkbox" value="1" id="r1" />
                         <label for="">
-                            <img src="images/heart-hollow.svg" alt="{type}" class="h-4 filter-purple">
+                            <img src="images/heart-hollow.svg" class="h-4 filter-purple">
                         </label>
                     </div>
-
-                    <!-- <div class="twitchFollow h-4 w-4" title="Follow on twitch">
-                        <img src="images/heart-hollow.svg" alt="{type}" class="h-4 filter-purple">
-                    </div> -->
                 </div>
             </div>
             <div class="flex flex-row gap-1.5 filter-white">
                 <a class="TwitchLink" title="Twitch" href="{url}" target="_blank">
-                    <img src="images/Twitch.svg" alt="{type}" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/Twitch.svg" alt="Twitch icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>
                 <a class="YoutubeLink" title="Youtube" href="{url}" target="_blank">
-                    <img src="images/Youtube.svg" alt="{type}" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/Youtube.svg" alt="Youtube icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>
                 <a class="DiscordLink" title="Discord" href="{url}" target="_blank">
-                    <img src="images/Discord.svg" alt="{type}" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/Discord.svg" alt="Discord icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>
                 <a class="InstagramLink" title="Instagram" href="{url}" target="_blank">
-                    <img src="images/Instagram.svg" alt="{type}" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/Instagram.svg" alt="Instagram icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>
                 <a class="PatreonLink" title="Patreon" href="{url}" target="_blank">
-                    <img src="images/Patreon.svg" alt="{type}" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/Patreon.svg" alt="Patreon icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>
                 <a class="LinktreeLink" title="Linktree" href="{url}" target="_blank">
-                    <img src="images/Linktree.svg" alt="{type}" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/Linktree.svg" alt="Linktree icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>                
             </div>
         </div>
@@ -77,8 +72,8 @@
 <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
 <script src="main.js"></script>
 <script>
-window.Twitch.ext.onAuthorized(function(auth) {
-    const Manager = new ListManager();
-    Manager.start(auth);
-});
+    window.Twitch.ext.onAuthorized(function(auth) {
+        const Manager = new ListManager();
+        Manager.start(auth);
+    });
 </script>

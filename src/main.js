@@ -2,7 +2,7 @@ class ListManager{
 
     Config = {
         MemberDataURL:'https://raw.githubusercontent.com/TeaPoweredCode/TheCultOfCreativity-TwitchPanel/refs/heads/config/TeamMembers.json',
-        LiveCheckTime: 120 // seconds
+        LiveCheckTime: 120, // seconds
     };
 
     Twitch = {
@@ -21,17 +21,17 @@ class ListManager{
     {
         this.Twitch.Header.Authorization = `Extension ${auth.helixToken}`;
 
-        this.GetMemberData().then((memberData) => {                            
+        this.getMemberData().then((memberData) => {                            
             document.getElementById("HeaderDiscord").href = memberData.Discord;
 
-            let twitchLogins = this.GetTwitchLogins(memberData);
-            this.getTwitchUserData(twitchLogins).then((TwitchData) =>{  
+            let twitchLogins = this.getTwitchLogins(memberData);
+            this.getTwitchUserData(twitchLogins).then((TwitchData) => {  
                 TwitchData.data.forEach((data) => {
                     let user = memberData.Users.find((User) => User.Links.Twitch.toLowerCase() == `https://www.twitch.tv/${data.login}`);
                     user.Twitch = {
                         "User":data,
                         "Stream":null  
-                    }
+                    };
                 });
 
                 this.MemberInfo = memberData;
@@ -45,7 +45,7 @@ class ListManager{
         });
     }
 
-    GetTwitchLogins(memberData){
+    getTwitchLogins(memberData){
         return memberData.Users.reduce((logins, member) => {             
             if (member.Links.Twitch) 
                 logins.push(member.Links.Twitch.split('/').at(-1).toLowerCase());
@@ -53,7 +53,7 @@ class ListManager{
         }, []);
     }
 
-    GetMemberData() {
+    getMemberData() {
         return fetch(this.Config.MemberDataURL).then(res => res.json());
     }
 
@@ -69,10 +69,10 @@ class ListManager{
                 .then(response => response.json())
     }
 
-    // getViewerFollowed(viewerID){
-    //     return fetch(`${this.Twitch.APIBase}/followed?user_id=${viewerID}`, {headers:this.Twitch.Header})
-    //     .then(response => response.json())
-    // }
+    getViewerFollowed(viewerID){
+        return fetch(`${this.Twitch.APIBase}/followed?user_id=${viewerID}`, {headers:this.Twitch.Header})
+        .then(response => response.json())
+    }
 
 
     buildMemberList(){
@@ -100,14 +100,14 @@ class ListManager{
                 link.style.display = 'none';
         };
 
-        let twitchFollow = templateEl.querySelector(".twitchFollow");
+        let twitchFollow = templateEl.querySelector(".TwitchFollow");
         twitchFollow.querySelector('input[type=checkbox]').id = `${user.Twitch.User.login}TwitchFollow`;
         twitchFollow.querySelector('input[type=checkbox]').value = user.Twitch.User.login;
 
         twitchFollow.querySelector('label').htmlFor = `${user.Twitch.User.login}TwitchFollow`;
 
         if(user.Twitch){
-            templateEl.querySelector(".twitchFollow").onclick = (e)=>{
+            templateEl.querySelector(".TwitchFollow").onclick = (e)=>{
                 e.preventDefault();
                 e.stopPropagation();
             
@@ -137,12 +137,12 @@ class ListManager{
 
 
     startLiveCheck(){
-        this.LiveCheck();
-        this.LiveTimer = setInterval(()=>{this.LiveCheck()}, this.Config.LiveCheckTime * 1000);
+        this.liveCheck();
+        this.LiveTimer = setInterval(()=>{this.liveCheck()}, this.Config.LiveCheckTime * 1000);
     }
 
-    LiveCheck(){
-        let twitchLogins = this.GetTwitchLogins(this.MemberInfo);
+    liveCheck(){
+        let twitchLogins = this.getTwitchLogins(this.MemberInfo);
         this.getTwitchStreamData(twitchLogins).then((TwitchData) =>{
             this.MemberInfo.Users.forEach((user) => {
                 if(user.Twitch)
