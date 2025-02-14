@@ -37,8 +37,12 @@ class ListManager{
                 this.MemberInfo = memberData;
                 this.buildMemberList();
                 this.startLiveCheck();
+
+                window.Twitch.ext.actions.onFollow((didFollow,channelName)=> {
+                    this.onFollow(didFollow,channelName);
+                }); 
             });
-          });
+        });
     }
 
     GetTwitchLogins(memberData){
@@ -65,6 +69,11 @@ class ListManager{
                 .then(response => response.json())
     }
 
+    // getViewerFollowed(viewerID){
+    //     return fetch(`${this.Twitch.APIBase}/followed?user_id=${viewerID}`, {headers:this.Twitch.Header})
+    //     .then(response => response.json())
+    // }
+
 
     buildMemberList(){
         const template = document.getElementById("template").children[0];
@@ -90,6 +99,23 @@ class ListManager{
             else
                 link.style.display = 'none';
         };
+
+        let twitchFollow = templateEl.querySelector(".twitchFollow");
+        twitchFollow.querySelector('input[type=checkbox]').id = `${user.Twitch.User.login}TwitchFollow`;
+        twitchFollow.querySelector('input[type=checkbox]').value = user.Twitch.User.login;
+
+        twitchFollow.querySelector('label').htmlFor = `${user.Twitch.User.login}TwitchFollow`;
+
+        if(user.Twitch){
+            templateEl.querySelector(".twitchFollow").onclick = (e)=>{
+                e.preventDefault();
+                e.stopPropagation();
+            
+                this.followChannelClick(user.Twitch.User.login);
+            };
+        }
+        else
+            templateEl.querySelector(".twitchFollow").style.display = 'none';
 
         return templateEl;
     }
@@ -131,5 +157,21 @@ class ListManager{
                 }
             });
         });
+    }
+
+    followChannelClick(channelId)
+    {
+        window.Twitch.ext.actions.followChannel(channelId);
+    }
+
+    onFollow(didFollow, channelName)
+    {        
+        if(didFollow)
+        {
+            let user = this.MemberInfo.Users.find((member) => member.Twitch.User.login == channelName);
+            if(user){
+                user.ListElement.querySelector('.twitchFollow input[type="checkbox"]').checked = true;
+            }
+        }
     }
 }

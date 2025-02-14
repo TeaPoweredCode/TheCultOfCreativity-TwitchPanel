@@ -582,6 +582,10 @@ video {
   height: 0.375rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -600,6 +604,10 @@ video {
 
 .w-16 {
   width: 4rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .w-8 {
@@ -735,6 +743,10 @@ video {
   filter: invert(100%) sepia(76%) saturate(0%) hue-rotate(281deg) brightness(106%) contrast(101%);
 }
 
+.filter-purple{
+  filter: brightness(0) saturate(100%) invert(49%) sepia(19%) saturate(2196%) hue-rotate(217deg) brightness(105%) contrast(93%);
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -749,6 +761,51 @@ video {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.twitchFollow {
+  display: inline-block;
+  -webkit-mask: url(images/heart-solid.svg) no-repeat 50% 50%;
+  mask: url(images/heart-solid.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background: #a175f600;
+  /* For Safari 3.0 to 6.0 */
+  transition: background .5s;
+  /* For modern browsers */
+  cursor: pointer;
+}
+
+/* .twitchFollow:hover {
+  background: #a175f678;
+} */
+
+.twitchFollow > input[type=checkbox]{
+  display: none;
+}
+
+.twitchFollow > label{
+  /*   
+  width: 48px;
+  height: 48px; */
+  display: inline-block;
+  -webkit-mask: url(images/heart-solid.svg) no-repeat 50% 50%;
+  mask: url(images/heart-solid.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background: #a175f600;
+  /* For Safari 3.0 to 6.0 */
+  transition: background .25s;
+  /* For modern browsers */
+  cursor: pointer;
+}
+
+.twitchFollow:hover {
+  background: #a175f678;
+}
+
+.twitchFollow > input[type=checkbox]:checked + label{
+  background-color: #a175f6FF;
 }
 
 .hover\:opacity-100:hover {
