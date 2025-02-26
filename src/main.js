@@ -1,7 +1,7 @@
 class ListManager{
 
     Config = {
-        MemberDataURL:'https://raw.githubusercontent.com/TeaPoweredCode/TheCultOfCreativity-TwitchPanel/refs/heads/config/TeamMembers.json',
+        rootURL : "https://raw.githubusercontent.com/TeaPoweredCode/TheCultOfCreativity-TwitchPanel/refs/heads/config",
         LiveCheckTime: 120, // seconds
     };
 
@@ -35,6 +35,8 @@ class ListManager{
                 });
 
                 this.MemberInfo = memberData;
+
+                this.setCustomUi(this.MemberInfo, auth.channelId);
                 this.buildMemberList();
                 this.startLiveCheck();
 
@@ -54,7 +56,7 @@ class ListManager{
     }
 
     getMemberData() {
-        return fetch(this.Config.MemberDataURL).then(res => res.json());
+        return fetch(`${this.Config.rootURL}/TeamMembers.json`).then(res => res.json());
     }
 
     getTwitchUserData(twitchUsers){
@@ -75,12 +77,40 @@ class ListManager{
     }
 
 
+    setCustomUi(memberInfo, channelId){
+        let user = memberInfo.Users.find((member) => member.Twitch && member.Twitch.User.id == channelId);
+        if(user && user.UI){
+            if(user.UI.BannerBackground){
+                let bannerURL = `${this.Config.rootURL}/CustomUI/${user.UI.BannerBackground}`;
+                if(this.isImageURL(bannerURL) && this.imageExists(bannerURL)){
+                    document.getElementById("Banner").style.backgroundImage = `url('${bannerURL}')`;
+                }
+            }
+
+            if(user.UI.CSS){
+                // TODO to come
+            }
+        }
+    }
+
+    isImageURL(url) {
+        return(url.match(/\.(jpeg|jpg|gif|png)$/) != null);
+    }
+
+    imageExists(url){
+        var http = new XMLHttpRequest();
+        http.open('HEAD', url, false);
+        http.send();
+        return http.status != 404;
+    }
+
     buildMemberList(){
         const template = document.getElementById("template").children[0];
         const teamList = document.getElementById("TeamList");
+        teamList.textContent = '';
 
         this.MemberInfo.Users.forEach((user) => {
-            if(user.Twitch){ // TODO if want none twitch people
+            if(user.Twitch){ // TODO if want none twitch people , would need an profile image
                 user.ListElement = this.createMemberItem(template.cloneNode(true),user);
                 teamList.appendChild(user.ListElement);
             }
