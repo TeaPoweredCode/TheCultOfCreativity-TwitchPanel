@@ -112,6 +112,10 @@
             "Info" : {
                 "Name":"TeaPoweredCode - Dev" 
             },
+            "UI" : {
+                "BannerBackground" : "TeaPoweredCode-bg.jpg",
+                "CSS" : "TeaPoweredCode.css"
+            },
             "Links":{
                 "Twitch" : "https://www.twitch.tv/teapoweredcode",
                 "Youtube" : "",
