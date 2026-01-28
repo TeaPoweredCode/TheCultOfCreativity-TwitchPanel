@@ -1,0 +1,38 @@
+{
+    "GroupName" : "",
+    "Discord" : "",
+    "Website" : "",
+    "Users" : 
+    [
+        {
+            "Info": {
+                "Name" : "",
+                "Twitch" : ""
+            },
+            "UI" : {
+                "BannerBackground" : "",
+                "CSS" : ""
+            },
+            "Links":{
+                "Youtube" : "",
+                "Discord" : "",
+                "Instagram" : "",
+                "Patreon" : "",
+                "Linktree": ""
+            }
+        },        
+        {
+            "Info" : {
+                "Name" : "",
+                "Twitch" : ""
+            },
+            "Links":{
+                "Youtube" : "",
+                "Discord" : "",
+                "Instagram" : "",
+                "Patreon" : "",
+                "Linktree" : ""
+            }
+        }
+    ]
+}

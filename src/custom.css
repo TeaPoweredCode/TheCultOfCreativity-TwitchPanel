@@ -1,0 +1,32 @@
+body{
+    background-color: #383838;
+}
+
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: #28282800;}
+::-webkit-scrollbar-thumb {background: #f4f4f4;}
+::-webkit-scrollbar-thumb:hover {background: #cacaca;}
+
+#Banner{
+    background-image: url('./images/banner-bg.jpg');
+    color: #ffffff;
+}
+
+#BannerDiscord img{
+    filter: invert(100%) sepia(76%) saturate(0%) hue-rotate(281deg) brightness(106%) contrast(101%);
+}
+
+
+.StreamerItem{
+    background-color: #2a2c2b;
+    color: #ffffff;
+}
+
+.TwitchFollow img{
+  filter: brightness(0) saturate(100%) invert(49%) sepia(19%) saturate(2196%) hue-rotate(217deg) brightness(105%) contrast(93%);
+}
+
+.SocialList img{
+    filter: invert(100%) sepia(76%) saturate(0%) hue-rotate(281deg) brightness(106%) contrast(101%);
+}
+

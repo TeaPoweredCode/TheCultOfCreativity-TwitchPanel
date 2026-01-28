@@ -679,6 +679,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .pl-1 {
   padding-left: 0.25rem;
 }
@@ -745,22 +749,6 @@ video {
 
 .filter-purple{
   filter: brightness(0) saturate(100%) invert(49%) sepia(19%) saturate(2196%) hue-rotate(217deg) brightness(105%) contrast(93%);
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #28282800;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 .twitchFollow {
