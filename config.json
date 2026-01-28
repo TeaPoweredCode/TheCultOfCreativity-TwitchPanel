@@ -6,10 +6,10 @@
     [
         {
             "Info" : {
-                "Name":"MikeMoans" 
+                "Name":"MikeMoans",
+                "Twitch" : "mikemoans"
             },
             "Links":{
-                "Twitch" : "https://www.twitch.tv/mikemoans",
                 "Youtube" : "https://www.youtube.com/@mikemoans9350",
                 "Discord" : "https://discord.gg/2VBqk2vVKt",
                 "Instagram" : "https://www.instagram.com/mikemoans/",
@@ -19,10 +19,10 @@
         },
         {
             "Info" : {
-                "Name":"Warboss Tuska" 
+                "Name":"Warboss Tuska",
+                "Twitch" : "warboss_tuska" 
             },
             "Links":{
-                "Twitch" : "https://www.twitch.tv/warboss_tuska",
                 "Youtube" : "",
                 "Discord" : "",
                 "Instagram" : "https://www.instagram.com/warbosstuska",
@@ -32,10 +32,10 @@
         },
         {
             "Info" : {
-                "Name":"Always live" 
+                "Name":"Always live",
+                "Twitch" : "woopig" 
             },
             "Links":{
-                "Twitch" : "https://www.twitch.tv/FerretSoftware",
                 "Youtube" : "",
                 "Discord" : "",
                 "Instagram" : "",
@@ -45,10 +45,10 @@
         },
         {
             "Info" : {
-                "Name":"RedStrawbaby" 
+                "Name":"RedStrawbaby",
+                "Twitch" : "redstrawbaby"  
             },
             "Links":{
-                "Twitch" : "https://www.twitch.tv/redstrawbaby",
                 "Youtube" : "",
                 "Discord" : "",
                 "Instagram" : "https://www.instagram.com/redstrawbaby",
@@ -58,10 +58,10 @@
         },
         {
             "Info" : {
-                "Name":"Nerdhalla" 
+                "Name":"Nerdhalla",
+                "Twitch" : "nerdhalla" 
             },
             "Links":{
-                "Twitch" : "https://www.twitch.tv/nerdhalla",
                 "Youtube" : "",
                 "Discord" : "https://discord.com/invite/RkcK5Y6CvC",
                 "Instagram" : "https://www.instagram.com/nerdhalladesigns",
@@ -71,10 +71,10 @@
         },
         {
             "Info" : {
-                "Name":"PainterlyGit" 
+                "Name":"PainterlyGit",
+                "Twitch" : "painterlygit"  
             },
             "Links":{
-                "Twitch" : "https://www.twitch.tv/painterlygit",
                 "Youtube" : "",
                 "Discord" : "",
                 "Instagram" : "https://www.instagram.com/painterlygit",
@@ -84,10 +84,10 @@
         },
         {
             "Info" : {
-                "Name":"GMWorkshop" 
+                "Name":"GMWorkshop",
+                "Twitch" : "gmworkshop"
             },
             "Links":{
-                "Twitch" : "https://www.twitch.tv/gmworkshop",
                 "Youtube" : "https://www.youtube.com/c/GMWorkshop",
                 "Discord" : "https://discord.gg/wn9cHPxqkQ",
                 "Instagram" : "",
@@ -97,10 +97,10 @@
         },
         {
             "Info" : {
-                "Name":"Wren_Temple" 
+                "Name":"Wren_Temple",
+                "Twitch" : "wren_temple"
             },
             "Links":{
-                "Twitch" : "https://www.twitch.tv/wren_temple",
                 "Youtube" : "https://www.youtube.com/@WrenTemple",
                 "Discord" : "",
                 "Instagram" : "https://www.instagram.com/wrentemple/",
@@ -110,14 +110,10 @@
         },        
         {
             "Info" : {
-                "Name":"TeaPoweredCode - Dev" 
-            },
-            "UI" : {
-                "BannerBackground" : "TeaPoweredCode-bg.jpg",
-                "CSS" : "TeaPoweredCode.css"
+                "Name":"TeaPoweredCode - Dev",
+                "Twitch" : "teapoweredcode"
             },
             "Links":{
-                "Twitch" : "https://www.twitch.tv/teapoweredcode",
                 "Youtube" : "",
                 "Discord" : "",
                 "Instagram" : "",
@@ -127,10 +123,10 @@
         },        
         {
             "Info" : {
-                "Name":"MrLuxan" 
+                "Name":"MrLuxan",
+                "Twitch" : ""
             },
             "Links":{
-                "Twitch" : "",
                 "Youtube" : "",
                 "Discord" : "",
                 "Instagram" : "",
