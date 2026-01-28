@@ -2,18 +2,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./style.css" rel="stylesheet">
+  <link href="./core.css" rel="stylesheet">
+  <link href="./custom.css" rel="stylesheet">
 </head>
-<body style="background-color: #383838;">
-    <div class="flex flex-col h-full text-white">
-        <div id="Banner" class="flex flex-row items-center p-2 justify-between text-white" style="background-image: url('images/bg.jpg');">
+<body>
+    <div class="flex flex-col h-full">
+        <div id="Banner" class="flex flex-row items-center p-2 justify-between">
             <div class="flex flex-row items-center gap-1">
                 <img src="images/logo.png" alt="Logo Image" class="w-10">
                 <span class="text-xl font-semibold">The Cult of Creativity</span>
             </div>    
             <div>
-                <a id="HeaderDiscord" title="The Cult of Creativity's Discord" href="#" target="_blank">
-                    <img src="images/Discord.svg" alt="Group Discord Image" class="w-8 filter-white">
+                <a id="BannerDiscord" title="The Cult of Creativity's Discord" href="#" target="_blank">
+                    <img src="images/Discord.svg" alt="Group Discord Image" class="w-8">
                 </a>
             </div>
         </div>
@@ -25,11 +26,11 @@
     
 
     <div id="template" class="hidden">
-        <div class="StreamerItem w-full items-center justify-between p-1" style="background-color: #2a2c2b;">
+        <div class="StreamerItem w-full items-center justify-between p-1">
             <div class="relative">
                 <a class="TwitchImageLink" href="" target="_blank">
                     <img class="StreamerImage w-16" src="">
-                    <div class="StreamerLive absolute bottom-0 m-px pl-1 pr-2 bg-black/[0.6] rounded-lg flex flex-row items-center gap-1 text-sm font-bold" style="display:none;">
+                    <div class="StreamerLive absolute bottom-0 m-px pl-1 pr-2 bg-black/[0.6] rounded-lg flex flex-row items-center gap-1 text-sm font-bold text-white" style="display:none;">
                          <div class="bg-red-600 rounded-full w-1.5 h-1.5"></div>
                          Live
                     </div>
@@ -37,43 +38,37 @@
             </div>
             <div>
                 <div class="flex flex-row gap-1.5 items-center">
-                    <div class="MemberName text-white font-bold text-lg"></div>
-                    <div class="TwitchFollow" class="h-4 w-4">
+                    <div class="MemberName font-bold text-lg"></div>
+                    <div class="TwitchFollow h-4 w-4" title="Follow on Twitch">
                         <input type="checkbox" value="1" id="r1" />
                         <label for="">
-                            <img src="images/heart-hollow.svg" class="h-4 filter-purple">
+                            <img src="images/heart-hollow.svg" class="h-4">
                         </label>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row gap-1.5 filter-white">
+            <div class="SocialList flex flex-row gap-1.5">
                 <a class="TwitchLink" title="Twitch" href="{url}" target="_blank">
-                    <img src="images/Twitch.svg" alt="Twitch icon" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/twitch.svg" alt="Twitch icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>
                 <a class="YoutubeLink" title="Youtube" href="{url}" target="_blank">
-                    <img src="images/Youtube.svg" alt="Youtube icon" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/youtube.svg" alt="Youtube icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>
                 <a class="DiscordLink" title="Discord" href="{url}" target="_blank">
-                    <img src="images/Discord.svg" alt="Discord icon" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/discord.svg" alt="Discord icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>
                 <a class="InstagramLink" title="Instagram" href="{url}" target="_blank">
-                    <img src="images/Instagram.svg" alt="Instagram icon" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/instagram.svg" alt="Instagram icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>
                 <a class="PatreonLink" title="Patreon" href="{url}" target="_blank">
-                    <img src="images/Patreon.svg" alt="Patreon icon" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/patreon.svg" alt="Patreon icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>
                 <a class="LinktreeLink" title="Linktree" href="{url}" target="_blank">
-                    <img src="images/Linktree.svg" alt="Linktree icon" class="h-5 opacity-85 hover:opacity-100">
+                    <img src="images/linktree.svg" alt="Linktree icon" class="h-5 opacity-85 hover:opacity-100">
                 </a>                
             </div>
         </div>
     </div>
 </body>
 <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
-<script src="main.js"></script>
-<script>
-    window.Twitch.ext.onAuthorized(function(auth) {
-        const Manager = new ListManager();
-        Manager.start(auth);
-    });
-</script>
+<script type="module" src="main.js"></script>

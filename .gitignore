@@ -1,2 +1,4 @@
 node_modules/
+src/test/
+src/settings.js
 src/images/*.log
