@@ -6,7 +6,7 @@ A custom team panel for twitch with options for ui customisation and links to ma
 
 #### Setup 
  - npm install
- - Rename [text](src/templates)SettingsTemplate.js to Settings.js
+ - Move rename ./templates/SettingsTemplate.js to ./src/Settings.js
    Set the RootURL and UIFolder values to url where the config files are stored
  ```
     export const Settings = Object.freeze({
@@ -59,3 +59,4 @@ This way editing can be locked down to select admins and I can vet any changes b
 
 If you want to create a custome css file copy and rename the src/custome.css  
 Make you style changes , update the config.file and upload the css file to the config location.
+
